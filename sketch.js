@@ -1,6 +1,7 @@
 var beep;
 
 function preload() {
+  //loading sound,
   beep = loadSound("beep.mp3");
 }
 
@@ -11,13 +12,13 @@ function setup() {
 function draw() {
   background("green");
   
-  console.log(frameCount);
-  
+  //calling function :)
   refresher();
 }
 
+//creating function for 'beep' sound,
 function refresher() {
-  if(frameCount % 790 === 0) {
+  if(frameCount % 840 === 0) {
     beep.play();
   }
 }
