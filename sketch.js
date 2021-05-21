@@ -18,7 +18,7 @@ function draw() {
 
 //creating function for 'beep' sound,
 function refresher() {
-  if(frameCount % 600 === 0) {
+  if(frameCount % 30 === 0) {
     beep.play();
   }
 }
